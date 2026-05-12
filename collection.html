@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSTRA</title>
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <!-- Navbar Section -->
+    <section class="flex justify-between" style="padding: 15px; position: sticky; top: 0px; z-index: 5; background-color: white;">
+        <h1 class="text-3xl font-bold z-40">Nostra</h1>
+        <div class="flex justify-between gap-10 hidden md:flex font-bold">
+            <p> <a href="./index.html">Home</a></p>
+            <p><a href="./index.html.#new-arrival" >New Arrival</a></p>
+            <p><a href="./index.html.#most-wanted">Most Wanted</a></p>
+            <p><a href="#">Collections</a></p>
+            <p><a href="./contact.html">Contact Us</a></p>
+        </div>
+        <p class="block md:hidden" id="navbar-logo"><i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i></p>
+    </section>
+    <!-- side navebar -->
+    <section id="side-navbar">
+        <div id="cancel-button">
+            <button>X</button>
+        </div>
+        <div class="absolute flex flex-col gap-10 p-10 top-20 left-10">
+            <p class="z-10"><a href="./index.html">Home</a></p>
+            <p class="z-10"><a href="./index.html.#new-arrival">New Arrival</a></p>
+            <p class="z-10"><a href="./index.html.#most-wanted">Most Wanted</a></p>
+            <p class="z-10"><a href="#">Collections</a></p>
+            <p class="z-10"><a href="./contact.html">Contact Us</a></p>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <!-- collection section -->
+     <section class="collection">
+        <div class="collection-container flex ">
+            <div class="collection__filder">
+                <h3 class="flider__occasion font-bold ">Occasion</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="summer"> Summer<br>
+                    <input type="checkbox" name="tags" value="party"> Party<br>
+                    <input type="checkbox" name="tags" value="beach"> Beach
+                </div>
+                <h3 class="flider__colors font-bold">Colors</h3>
+                 <div>
+                    <input type="checkbox" name="tags" value="red"> Red<br>
+                    <input type="checkbox" name="tags" value="blue"> Blue<br>
+                    <input type="checkbox" name="tags" value="white"> White<br>
+                    <input type="checkbox" name="tags" value="green"> Green
+                </div>
+                <h3 class="flider__arrival font-bold">Arrivals</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="new"> New<br>
+                    <input type="checkbox" name="tags" value="old"> Old
+                </div>
+                <hr class="vertical-line">
+            </div>
+            <div class="collection__product">
+                <form class="product__search">
+                    <input type="search" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(5, 5, 5);"></i>
+                </form>
+                <div class="product__products">
+                    <div class="product">
+                        <img src="./images/collection1.jpg" alt="">
+                        <h1>Floral Summer Shirt</h1>
+                        <p>₹220</p>
+                        <tags style="visibility: hidden;">new,blue,summer</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection2.jpg" alt="">
+                        <h1>Summer Green</h1>
+                        <p>₹260</p>
+                        <tags style="visibility: hidden;">new,green,summer</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection3.jpg" alt="">
+                        <h1>Party Floral Shirt</h1>
+                        <p>₹399</p>
+                        <tags style="visibility: hidden;">new,floral,party</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection4.jpg" alt="">
+                        <h1>Floral Summer Shirt</h1>
+                        <p>₹399</p>
+                        <tags style="visibility: hidden;">old,floral,summer</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection5.jpg" alt="">
+                        <h1>Beach Shirt</h1>
+                        <p>₹579</p>
+                        <tags style="visibility: hidden;">old,beach,summer</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection6.jpg" alt="">
+                        <h1>Shirt Party Red</h1>
+                        <p>₹579</p>
+                        <tags style="visibility: hidden;">old,red,party</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection7.jpg" alt="">
+                        <h1>Party Floral Shirt</h1>
+                        <p>₹399</p>
+                        <tags style="visibility: hidden;">new,floral,party</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection8.jpg" alt="">
+                        <h1>Shirt Party Red</h1>
+                        <p>₹579</p>
+                        <tags style="visibility: hidden;">old,red,party</tags>
+                    </div>
+                    <div class="product">
+                        <img src="./images/collection9.jpg" alt="">
+                        <h1>Floral Summer Shirt</h1>
+                        <p>₹220</p>
+                        <tags style="visibility: hidden;">new,blue,summer</tags>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+      <!-- NEWS section -->
+     <div class="news">
+        <h2 class="text-[4vw] font-bold text-center">Join our News Letter</h2>
+        <p class="text-[2vw] text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="text-center">
+            <input type="text" class="search">
+        </div>
+        <div class="text-center">
+            <button>Subscribe
+                    <i class="fa-solid fa-right-long" style="color: white;"></i>
+                </button>
+        </div>
+     </div>
+      <!-- Footer section -->
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box1">
+                <h2 class="text-[4vw] font-bold">Nostra</h2>
+                <p class="" style="margin-bottom: 3vw;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                    <i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i>
+                    <i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i>
+                </div>
+            </div>
+           
+        </div>
+         <p class="text-[2vw] font-bold">@ 2023 Nostra.com</p>
+     </div>
+
+    <script>
+         var btn2 = document.getElementById("cancel-button")
+        var sidebar = document.getElementById("side-navbar")
+        btn2.addEventListener("click", function() {
+            sidebar.style.marginLeft = "-60%"
+            sidebar.style.transitionDuration = "1s"
+        })
+        var btn3 = document.getElementById("navbar-logo")
+        btn3.addEventListener("click", function () {
+            sidebar.style.marginLeft = "0%"
+            sidebar.style.transitionDuration = "1s"
+        })
+        var fliterlist=[]
+        var tags=document.getElementsByName("tags")
+        console.log(tags)
+        tags.forEach((tags)=>{
+            tags.addEventListener("change",function(){
+                if(event.target.checked){
+                    fliterlist.push(event.target.value)
+                    console.log(fliterlist)
+                    update()
+                }
+                else{
+                    var index=fliterlist.indexOf(event.target.value)
+                    fliterlist.splice(index, 1)
+                    console.log(fliterlist)
+                    update()
+                }
+            })
+        })
+        function update(){
+            var productlist=document.querySelectorAll(".product")
+            // console.log(productlist)
+            for(var i=0;i<productlist.length;i++){
+                var product=productlist[i]
+                var tags=product.querySelector("tags").innerHTML
+                // console.log(tags)
+                hashtaglist=tags.split(",")
+                // console.log(hashtaglist)
+                var display=false
+                fliterlist.forEach((j)=>{
+                    hashtaglist.forEach((i)=>{
+                        if(j===i){
+                            display=true
+                            // console.log(i)
+                        }
+                        // console.log(j)
+                        // console.log(i)
+                    })
+                })
+                if(!display && fliterlist.length>0){
+                    product.style.display="none"
+                }
+                else{
+                    product.style.display="block"
+                }
+            }
+        }
+    </script>
+</body>
+</html>

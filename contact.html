@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSTRA</title>
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style link -->
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+        <!-- Navbar Section -->
+    <section class="flex justify-between" style="padding: 15px; position: sticky; top: 0px; z-index: 5; background-color: white;">
+        <h1 class="text-3xl font-bold z-40">Nostra</h1>
+        <div class="flex justify-between gap-10 hidden md:flex font-bold">
+            <p> <a href="./index.html">Home</a></p>
+            <p><a href="./index.html.#new-arrival" >New Arrival</a></p>
+            <p><a href="./index.html.#most-wanted">Most Wanted</a></p>
+            <p><a href="./collection.html">Collections</a></p>
+            <p><a href="#">Contact Us</a></p>
+        </div>
+        <p class="block md:hidden" id="navbar-logo"><i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i></p>
+    </section>
+    <!-- side navebar -->
+    <section id="side-navbar">
+        <div id="cancel-button">
+            <button>X</button>
+        </div>
+        <div class="absolute flex flex-col gap-10 p-10 top-20 left-10">
+            <p class="z-10"><a href="./index.html">Home</a></p>
+            <p class="z-10"><a href="./index.html.#new-arrival">New Arrival</a></p>
+            <p class="z-10"><a href="./index.html.#most-wanted">Most Wanted</a></p>
+            <p class="z-10"><a href="./collection.html">Collections</a></p>
+            <p class="z-10"><a href="#">Contact Us</a></p>
+        </div>
+        <div class="overlay"></div>
+    </section>
+    <!-- Contact section -->
+     <div style="display: flex; justify-content: center;;">
+        <section class="bg-white dark:bg-gray-900">
+  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+      <form action="#" class="space-y-8">
+          <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+          </div>
+          <div>
+              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+          </div>
+          <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+          </div>
+          <button type="submit" style="padding: 10px; margin: 10px;" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+      </form>
+  </div>
+    </section>
+     </div>
+      <!-- NEWS section -->
+     <div class="news">
+        <h2 class="text-[4vw] font-bold text-center">Join our News Letter</h2>
+        <p class="text-[2vw] text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="text-center">
+            <input type="text" class="search">
+        </div>
+        <div class="text-center">
+            <button>Subscribe
+                    <i class="fa-solid fa-right-long" style="color: white;"></i>
+                </button>
+        </div>
+     </div>
+    <!-- Footer section -->
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box1">
+                <h2 class="text-[4vw] font-bold">Nostra</h2>
+                <p class="" style="margin-bottom: 3vw;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                    <i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i>
+                    <i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i>
+                </div>
+            </div>
+           
+        </div>
+         <p class="text-[2vw] font-bold">@ 2023 Nostra.com</p>
+     </div>
+
+    <script>
+         var btn2 = document.getElementById("cancel-button")
+        var sidebar = document.getElementById("side-navbar")
+        btn2.addEventListener("click", function() {
+            sidebar.style.marginLeft = "-60%"
+            sidebar.style.transitionDuration = "1s"
+        })
+        var btn3 = document.getElementById("navbar-logo")
+        btn3.addEventListener("click", function () {
+            sidebar.style.marginLeft = "0%"
+            sidebar.style.transitionDuration = "1s"
+        })
+    </script>
+</body>
+</html>
