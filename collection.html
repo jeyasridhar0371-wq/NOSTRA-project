@@ -71,7 +71,7 @@
             </div>
             <div class="collection__product">
                 <form class="product__search">
-                    <input type="search" placeholder="Search">
+                    <input type="search" placeholder="Search" id="search">
                     <i class="fa-solid fa-magnifying-glass" style="color: rgb(5, 5, 5);"></i>
                 </form>
                 <div class="product__products">
@@ -221,6 +221,23 @@
                 }
             }
         }
+        
+        var search=document.getElementById("search")
+        var container=document.querySelector(".product__products")
+        var h1list=container.querySelectorAll("h1")
+        // console.log(h1list)
+        search.addEventListener("keyup",function(){
+            var enteredvalue=event.target.value.toUpperCase()
+            // console.log(enteredvalue)
+            for(var i=0;i<h1list.length;i++){
+                if(h1list[i].textContent.toUpperCase().indexOf(enteredvalue)<0){
+                    h1list[i].parentElement.style.display="none"
+                }
+                else{
+                    h1list[i].parentElement.style.display="block"
+                }
+            }
+        })
     </script>
 </body>
 </html>
